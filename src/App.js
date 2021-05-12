@@ -1,14 +1,13 @@
 import React from 'react'
 import { createInstance, OptimizelyProvider, withOptimizely, setLogLevel } from '@optimizely/react-sdk'
-import { default as UUID } from 'uuid'
-
+import { v4 as UUID } from 'uuid'
+//test1
 import Astronaut from './components/Astronaut'
 import Planet from './components/Planet'
 
 import './App.css'
 
-setLogLevel('debug')
-
+setLogLevel('info')
 const optimizelyClientInstance = createInstance({
   sdkKey: process.env.REACT_APP_SDK_KEY_PROD
 })
